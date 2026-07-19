@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">AI Resume Analyzer</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Analyze Your Resume with AI</h1>
+        <p>Get ATS Score, Skill Analysis, and Improvement Suggestions.</p>
+    </section>
+
+    <!-- Upload Section -->
+    <section class="upload-section">
+        <h2>Upload Resume</h2>
+
+        <form id="resumeForm">
+            <input type="file" id="resumeFile" accept=".pdf,.doc,.docx">
+            <button type="submit">Analyze Resume</button>
+        </form>
+    </section>
+
+    <!-- Results Section -->
+    <section class="results">
+
+        <!-- ATS Score -->
+        <div class="card">
+            <h2>ATS Score</h2>
+            <h1 id="atsScore">85%</h1>
+        </div>
+
+        <!-- Skills -->
+        <div class="card">
+            <h2>Detected Skills</h2>
+            <ul id="skillsList">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+            </ul>
+        </div>
+
+        <!-- Missing Keywords -->
+        <div class="card">
+            <h2>Missing Keywords</h2>
+            <ul id="missingKeywords">
+                <li>Node.js</li>
+                <li>MongoDB</li>
+                <li>React</li>
+            </ul>
+        </div>
+
+        <!-- Suggestions -->
+        <div class="card">
+            <h2>Suggestions</h2>
+            <ul id="suggestions">
+                <li>Add more technical skills.</li>
+                <li>Include project achievements.</li>
+                <li>Use industry-specific keywords.</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 AI Resume Analyzer | Built with HTML, CSS & JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
